@@ -1,11 +1,9 @@
-let botaoPesquisar = document.querySelector("#botao-pesquisar-pokemon");
-let inputErro = document.querySelector(".erro");
 
 //funcao que captura os elementos html
 let elementos = pegarElementosHtml();
 
 //acoes no evento de click do botao pesquisar
-botaoPesquisar.addEventListener("click", () => {
+elementos.botaoPesquisar.addEventListener("click", () => {
     let input = document.querySelector("#pesquisar-pokemon").value;
     if (input.length > 0) {
 
@@ -55,6 +53,7 @@ function consumindoApi(input) {
 
 function pegarElementosHtml() {
     let tags = {
+    botaoPesquisar: document.querySelector("#botao-pesquisar-pokemon"),
     imgTag: document.querySelector(".img-pokemon"),
     nameTag: document.querySelector(".card-title"),
     habilidadesTag: document.querySelector(".card-text"),
