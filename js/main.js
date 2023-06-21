@@ -4,7 +4,7 @@ let elementos = pegarElementosHtml();
 
 //acoes no evento de click do botao pesquisar
 elementos.botaoPesquisar.addEventListener("click", () => {
-    let input = document.querySelector("#pesquisar-pokemon").value;
+    let input = document.querySelector("#pesquisar-pokemon").value.toLowerCase();
     if (input.length > 0) {
 
         //consumindo API
