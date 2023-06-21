@@ -94,6 +94,9 @@
         width: 100%;
     }
 
+    .rodape {
+    position: relative;
+    }
 }
 
 @keyframes subir-descer {
