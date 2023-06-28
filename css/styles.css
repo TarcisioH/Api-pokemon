@@ -80,7 +80,7 @@ i:hover {
 
 .rodape > a {
     text-decoration: none;
-    color: white;
+    color: white!important;
     margin-left: 10px;
 }
 
